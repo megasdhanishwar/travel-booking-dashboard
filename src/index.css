@@ -1424,9 +1424,9 @@ td small {
     width: 100%;
   }
 
-  .menu-btn {
+  /* .menu-btn {
     display: grid;
-  }
+  } */
 
   .topbar {
     padding: 0 18px;
@@ -1469,6 +1469,11 @@ td small {
 ========================= */
 
 @media (max-width: 560px) {
+
+  .menu-btn {
+    display: grid;
+  }
+
   main {
     padding: 15px;
   }
@@ -1584,5 +1589,25 @@ td small {
 
   .modal-body {
     padding: 16px;
+  }
+}
+
+/* =========================
+   Menu Button - Mobile Only
+========================= */
+
+.menu-btn {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .menu-btn {
+    display: grid !important;
+  }
+}
+
+@media (min-width: 601px) {
+  .menu-btn {
+    display: none !important;
   }
 }
