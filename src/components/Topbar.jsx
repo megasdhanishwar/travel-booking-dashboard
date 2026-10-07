@@ -4,9 +4,9 @@ import { FiMenu, FiSearch, FiBell, FiChevronDown } from "react-icons/fi";
 export default function Topbar({ setOpen, title, subtitle }) {
   return (
     <header className="topbar">
-      <button className="icon-btn menu-btn" onClick={() => setOpen(true)}>
+      {/* <button className="icon-btn menu-btn" onClick={() => setOpen(true)}>
         <FiMenu />
-      </button>
+      </button> */}
       <div className="page-heading">
         <h1>{title}</h1>
         <p>{subtitle}</p>
